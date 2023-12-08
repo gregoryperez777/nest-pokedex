@@ -4,6 +4,7 @@
 /mongo
 
 .env
+.end.prod
 
 # Logs
 logs

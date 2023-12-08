@@ -40,6 +40,26 @@ yarn start:dev
 http://localhost:3000/api/v2/seed
 ```
 
+# Production Build
+
+1. Crear archivo ```.env.prod```
+
+2. Llenar las variables de entornos de prod
+
+3. Crear la nueva imagen
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
 ## Stack usado
 * MongoDB
 * Nest
+
+# Notas
+Railway redeploy sin cambios:
+
+```
+git commit --allow-empty -m  "Tigger Railway deploy"
+git push origin main
+```
